@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+public class ZywOo {
+  public static int[] multipleOfIndex(int[] array) {
+  ArrayList<Integer> result1 = new ArrayList<Integer>();
+    for(int i=1; i<array.length; i++){
+      if (array[i]%i ==0) 
+        result1.add(array[i]);
+    } 
+    int[] result = new int[result1.size()];
+    for(int j=0; j<result1.size(); j++){
+         result[j]=result1.get(j);
+          }
+    return result;
+  }
+}
